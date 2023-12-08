@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="stylesheet" href="/styles.css">
+      <link rel="stylesheet" href="/profile.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+   <body>
+      <h1>User Profile</h1>
+      <form id="profileForm">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+         <label for="location">Location:</label>
+         <input type="text" id="location" name="location" required>
+         <label for="dob">Date of Birth:</label>
+         <input type="date" id="dob" name="dob" required>
+         <label for="skillLevel">Sports Skill Level:</label>
+         <select id="skillLevel" name="skillLevel" required>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+         </select>
+         <label for="favoriteSport">Favorite Sport:</label>
+         <input type="text" id="favoriteSport" name="favoriteSport" required>
+         <a href="/index.html">
+         <button type="button" onclick="saveProfile()">Save Profile</button>
+         </a>
+      </form>
+      <script>
+         function saveProfile() {
+             alert('Profile saved!');
+         }
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.1.0/dexie.js"></script>
+      <script src="/script.js"></script>
+      <script src="/sw.js"></script>
+   </body>
+</html>

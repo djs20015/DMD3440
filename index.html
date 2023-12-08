@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+      <link rel="manifest" href="/manifest.json">
+      <link rel="stylesheet" href="/styles.css">
+      <link rel="stylesheet" href="/profile.css">
+      <title>Pickleball Game Finder</title>
+   </head>
+   <body>
+      <header>
+         <h1>Pickleball Game Finder</h1>
+         <a href="/profile.html">User Profile</a>
+      </header>
+      <main>
+         <div id="map"></div>
+         <label for="zipCode"></label>
+         <input type="text" id="zipCode" placeholder="Enter ZIP Code">
+         <button id="findGames">Find Pickleball Games</button>
+      </main>
+      <footer>
+         <p>&copy; 2023 Pickleball Game Finder</p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.1.0/dexie.js"></script>
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <script src="/script.js"></script>
+      <script src="/sw.js"></script>
+   </body>
+</html>
